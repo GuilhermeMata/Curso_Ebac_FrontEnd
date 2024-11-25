@@ -1,7 +1,20 @@
-h1 {
-    color: green;
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
 }
 
-.GitHub {
-    color: red;
+a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+header li {
+    display: inline;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+
 }
