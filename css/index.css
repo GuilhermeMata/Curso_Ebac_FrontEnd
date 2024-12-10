@@ -19,7 +19,7 @@ button {
     cursor: pointer;
     transition: background-color 0.3s ease;
     display: inline-block;
-    margin: 5px;
+    margin: 20px;
 }
 
 button:hover {
@@ -42,11 +42,83 @@ button:disabled {
 }
 
 header li {
-    display: inline-block;
-    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 .container {
-    width: 1200px;
-    margin: 0 auto;
+    width: 1366px;
+    margin: 0 auto 0 auto;
+}
+
+.logo-git {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+.logo-cadastro {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.logo-container {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.logo-list {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.logo-tabela {
+    height: 64px;
+    width: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.logo-formulario {
+    width: 64px;
+    height: 64px;
+    border-radius: 50px;
+    object-fit: cover;
+}
+
+.logo-label {
+    width: 64px;
+    height: 64px;
+    border-radius: 50px;
+    object-fit: cover;
+}
+
+.logo-midia {
+    height: 64px;
+    width: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.logo-tel {
+    height: 64px;
+    width: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.email-marketing {
+    height: 64px;
+    width: 64px;
+    border-radius: 50%;
+    object-fit: cover;
 }
