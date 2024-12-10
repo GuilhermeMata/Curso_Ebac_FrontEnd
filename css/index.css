@@ -41,6 +41,18 @@ button:disabled {
     cursor: not-allowed;
 }
 
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh;
+}
+
+section {
+    text-align: center;
+}
+
 header li {
     display: flex;
     flex-direction: row;
@@ -49,76 +61,22 @@ header li {
 }
 
 .container {
-    width: 1366px;
+    width: 100%;
+    max-width: 1366px;
     margin: 0 auto 0 auto;
 }
 
+/* --Logos-- */
 .logo-git {
     width: 100px;
     height: 100px;
     border-radius: 50%;
     object-fit: contain;
 }
-
-.logo-cadastro {
+.logo-cadastro, .logo-container, .logo-list, .logo-tabela, 
+.logo-formulario, .logo-label, .logo-midia, .logo-tel, .email-marketing {
     width: 64px;
     height: 64px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.logo-container {
-    width: 64px;
-    height: 64px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.logo-list {
-    width: 64px;
-    height: 64px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.logo-tabela {
-    height: 64px;
-    width: 64px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.logo-formulario {
-    width: 64px;
-    height: 64px;
-    border-radius: 50px;
-    object-fit: cover;
-}
-
-.logo-label {
-    width: 64px;
-    height: 64px;
-    border-radius: 50px;
-    object-fit: cover;
-}
-
-.logo-midia {
-    height: 64px;
-    width: 64px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.logo-tel {
-    height: 64px;
-    width: 64px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.email-marketing {
-    height: 64px;
-    width: 64px;
     border-radius: 50%;
     object-fit: cover;
 }
