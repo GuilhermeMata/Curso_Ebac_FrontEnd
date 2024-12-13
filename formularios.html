@@ -7,48 +7,37 @@
     <title>Formulários</title>
 </head>
 <body>
-    <!-- Navbar -->
     <nav>
-        <button>
-            <a href="index.html">Home</a>
-        </button>
+        <div>
+            <button>
+                <a href="/index.html">Home</a>
+            </button>
+        </div>
     </nav>
-    
-    <!-- Formulário -->
-    <header>
-        <h2>Formulario</h2>
-    </header>
-
-    <main>
-        <form>
-            <center>
+    <h1 style="text-align: center;">Formulario</h1>
+    <div class="container">
+        <main>
+            <form>
                 <label for="nome">Nome:</label>
                 <input id="nome" type="text" placeholder="Seu Nome">
-                <br><br>
 
                 <label for="email">Email:</label>
                 <input id="email" type="email" placeholder="Email">
-                <br><br>
 
                 <label for="tel">Telefone:</label>
                 <input id="tel" type="tel" placeholder="Telefone">
-                <br><br>
 
                 <label for="number">Seu Id:</label>
                 <input id="number" type="number" max="10" min="2" step="2">
-                <br><br>
 
                 <label for="arquivo">Anexe teu arquivo aqui:</label>
                 <input id="arquivo" type="file">
-                <br><br>
 
                 <label for="color">Escolha uma Cor:</label>
                 <input id="color" type="color">
-                <br><br>
 
                 <input type="checkbox" id="checkbox-termos"> 
                 <label for="checkbox-termos">Aceito os termos</label>
-                <br><br>
 
                 <p>Qual sua cor favorita?</p>
                 <input type="radio" name="cor-favorita" id="cor-vermelha">
@@ -59,7 +48,6 @@
 
                 <input type="radio" name="cor-favorita" id="cor-azul">
                 <label for="cor-azul">Azul</label>
-                <br><br>
 
                 <label for="filme-favorito">Qual seu Filme Favorito?</label>
                 <select name="filme" id="filme-favorito">
@@ -67,16 +55,13 @@
                     <option value="B">Filme B</option>
                     <option value="C">Filme C</option>
                 </select>
-                <br><br>
 
                 <label for="opniao">Deixe sua sujestão de Filme:</label>
                 <textarea name="opniao" id="opniao"></textarea>
-                <br><br>
-
-                <button type="submit">Enviar</button>
-                <button type="reset" class="btn-limpar">Limpar</button>
-            </center>
-        </form>
-    </main>
+            </form>
+            <button type="submit">Enviar</button>
+            <button type="reset" class="btn-limpar">Limpar</button>
+        </main>
+    </div>
 </body>
 </html>

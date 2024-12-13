@@ -19,7 +19,7 @@ button {
     cursor: pointer;
     transition: background-color 0.3s ease;
     display: inline-block;
-    margin: 20px auto;
+    margin: 20px;
 }
 
 button:hover {
@@ -41,14 +41,9 @@ button:disabled {
     cursor: not-allowed;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.form-cadastro {
+    width: 300px;
+    margin: 50px auto;
+    text-align: center;
 }
 
-.container {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px;
-}

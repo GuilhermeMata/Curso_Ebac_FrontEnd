@@ -4,13 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário de Cadastro</title>
-    <link rel="stylesheet" href="/css/stlyle.css">
+    <link rel="stylesheet" href="/css/cad.css">
 </head>
 <body>
-
+    <nav>
+        <div>
+            <button>
+                <a href="index.html">Home</a>
+            </button>
+        </div>
+    </nav>
     <center>
-        <h1>Formulário de Cadastro</h1>    
-
+        <h1>Formulário de Cadastro</h1>
+        <div class="form-cadastro">
         <form action="/processar-dados" method="post">
             <label for="nome">Nome:</label>
             <input type="text" id="nome" name="nome" placeholder="Seu Nome" required>
@@ -24,8 +30,9 @@
             <input type="password" id="password" name="password" placeholder="Senha" required>
             <br><br>
           
-            <button type="submit">Cadastrar</button>
-          </form>          
+            <button type="submit"><a href="/css/cad.css"></a>Cadastrar</button>
+          </form> 
+        </div> 
     </center>
 
 </body>
