@@ -1,67 +1,88 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aula Html</title>
-    <link rel="stylesheet" href="/css/index.css">
-</head>
-<body>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/newindex.css">
+  </head>
+  <body>
     <header>
-        <section>
-            <h1>Seja Bem Vindo!</h1>
-            <p>Este é o conteúdo principal da página. 🫡</p>
-        </section>  
-        <div class="container">
-            <nav>
-                <ul>
-                    <li>
-                        <button><a href="https://github.com/GuilhermeMata" title="Ir para o meu GitHub" class="GitHub">Meu GitHub</a></button>
-                        <img src="/midia/GitHub-Logo.png" alt="logo-github" class="logo-git">
-                    </li>
-                    <li>
-                        <button><a href="/exerciciocss.html" title="css">Exercício CSS</a></button>
-                        <img src="/midia/logo-css.png" alt="img-css" class="logo-css">
-                    </li>
-                    <li>
-                        <button><a href="cadastro.html" title="cad">Exercício Cadastro</a></button>
-                        <img src="/midia/cadastro.avif" alt="logo-cad" class="logo-cadastro">
-                    </li>
-                    <li>
-                        <button><a href="containers.html" title="Containers">Exercício Containers</a></button>
-                        <img src="/midia/conteiner-logo.png" alt="logo-cont" class="logo-container">
-                    </li>
-                    <li>
-                        <button><a href="listas.html" title="Listas">Exercício Listas</a></button>
-                        <img src="/midia/lista.webp" alt="lista" class="logo-list">
-                    </li>
-                    <li>
-                        <button><a href="tabelas.html" title="Tabelas">Exercício tabelas</a></button>
-                        <img src="/midia/tabelinha.png" alt="tabela" class="logo-tabela">
-                    </li>
-                    <li>
-                        <button><a href="formularios.html" title="formularios">Exercício Formulários</a></button>
-                        <img src="/midia/form.png" alt="Formulario" class="logo-formulario">
-                    </li>
-                    <li>
-                        <button><a href="label.html" title="labels">Exercício Label</a></button>
-                        <img src="/midia/label.avif" alt="label" class="logo-label">
-                    </li>
-                    <li>
-                        <button><a href="midia.html" title="midias">Exercício Midias</a></button>
-                        <img src="/midia/midia.jpg" alt="midia" class="logo-midia">
-                    </li>
-                    <li>
-                        <button><a href="tel:11 932002233" title="telefone">11 932002233</a></button>
-                        <img src="/midia/tel.png" alt="tel" class="logo-tel">
-                    </li>
-                    <li>
-                        <button><a href="mailto:guilherme@gmail.com" title="email">Entre em contato pelo E-mail</a></button>
-                        <img src="/midia/email-marketing.jpg" alt="mail" class="email-marketing">
-                    </li>
+      <!-- Bootstrap -->
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <img src="/midia/codesymbol.png" alt="Logo" width="90" height="50" class="d-inline-block align-text-top">
+          <a class="navbar-brand" href="#">Meus Projetos</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="https://github.com/GuilhermeMata">Meu GitHub</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Contato
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="https://www.linkedin.com/in/guilherme-mata-116523270/">Linkedin</a></li>
+                    <li><a class="dropdown-item" href="mailto:guilhermemata33@gmail.com">Enviar e-mail para Guilherme</a></li>
+                  </ul>
+                </li>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Exercícios EBAC
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/exerciciocss.html">Exercício CSS</a></li>
+                  <li><a class="dropdown-item" href="/containers.html">Containers</a></li>
+                  <li><a class="dropdown-item" href="/formularios.html">Formulários</a></li>
+                  <li><a class="dropdown-item" href="/cadastro.html">Cadastro</a></li>
+                  <li><a class="dropdown-item" href="/label.html">Label</a></li>
+                  <li><a class="dropdown-item" href="/listas.html">Lista</a></li>
+                  <li><a class="dropdown-item" href="/midia.html">Mídias</a></li>
+                  <li><a class="dropdown-item" href="/tabelas.html">Tabelas</a></li>
                 </ul>
-            </nav>
+              </li>
+            </ul>
+          </div>
         </div>
+      </nav>
     </header>
-</body>
+
+    <div class="container mt-5">
+      <div class="row">
+        <article class="col-12 col-md-6 mb-4">
+          <h3>Projeto Exercício de CSS</h3>
+          <p>- Projeto Realizado em conjunto com os Cursos EBAC</p>
+          <a href="/exerciciocss.html">
+            <img src="/midia/print-css.png" alt="exercico-css" class="img-fluid" style="height: 300px; object-fit: cover;">
+          </a>
+        </article>
+
+        <article class="col-12 col-md-6 mb-4">
+          <h3>Projeto inspirado na EBAC</h3>
+          <p>- Projeto inspirado no campeonato da WEC</p>
+          <a href="/containers.html">
+            <img src="/midia/print-container.png" alt="carros-wec" class="img-fluid" style="height: 300px; object-fit: cover;">
+          </a>
+        </article>
+
+<!--Vou melhorar as TABELAS-->  
+      
+    <!--<article class="col-12 col-md-6 mb-4">
+            <h3>Projeto Exercício de Tabela</h3>
+            <p>- Projeto Realizado Na EBAC</p>
+            <a href="/tabelas.html">
+              <img src="/midia/print-tabela.png" alt="tabela" class="img-fluid" style="height: 300px; object-fit: cover;">
+            </a>
+          </article>-->
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
