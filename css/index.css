@@ -1,7 +1,11 @@
 * {
     box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 a {
@@ -9,76 +13,78 @@ a {
     text-decoration: none;
 }
 
-button {
+footer {
     background-color: #322aa6;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    display: inline-block;
-    margin: 20px;
-}
-
-button:hover {
-    background-color: #45a049;
-}
-
-button:focus {
-    outline: none;
-    box-shadow: 0 0 5px 2px rgba(0, 128, 0, 0.6);
-}
-
-button a {
-    color: white;
-    text-decoration: none;
-}
-
-button:disabled {
-    background-color: #ddd;
-    cursor: not-allowed;
-}
-
-header {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     display: flex;
-    flex-direction: column;
-    justify-content: center; 
-    align-items: center; 
-    min-height: 100vh;
-}
-
-section {
-    text-align: center;
-}
-
-header li {
-    display: flex;
-    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
+    padding: 20px;
+    color: white;
+    position: relative;
+}
+
+footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+footer p {
+    z-index: 2;
+    position: relative;
 }
 
 .container {
     width: 100%;
-    max-width: 1366px;
-    margin: 0 auto 0 auto;
+    margin: 0 auto;
+    padding: 40px;
 }
 
-/* --Logos-- */
-.logo-git {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    object-fit: contain;
-}
-.logo-cadastro, .logo-container, .logo-list, .logo-tabela, 
-.logo-formulario, .logo-label, .logo-midia, .logo-tel, .email-marketing, .logo-css {
-    width: 64px;
-    height: 64px;
-    border-radius: 50%;
-    object-fit: cover;
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
 }
 
+.articles article {
+    flex: 1 1 calc(33.333% - 20px);
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.articles article img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.articles article p,
+.articles article a {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-family: 'Roboto', sans-serif;
+
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.articles article h3 {
+    font-size: 24px;
+}
+
+.articles article h2 {
+    font-size: 28px;
+    margin-top: 10px;
+}
 
