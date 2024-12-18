@@ -1,7 +1,11 @@
 * {
     box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;;
 }
 
 a {
@@ -9,74 +13,21 @@ a {
     text-decoration: none;
 }
 
-button {
-    background-color: #322aa6;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    display: inline-block;
-    margin: 20px;
-}
-
-button:hover {
-    background-color: #45a049;
-}
-
-button:focus {
-    outline: none;
-    box-shadow: 0 0 5px 2px rgba(0, 128, 0, 0.6);
-}
-
-button a {
-    color: white;
-    text-decoration: none;
-}
-
-button:disabled {
-    background-color: #ddd;
-    cursor: not-allowed;
-}
-
-header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; 
-    align-items: center; 
-    min-height: 100vh;
-}
-
-section {
-    text-align: center;
-}
-
-header li {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
 .container {
     width: 100%;
-    max-width: 1366px;
-    margin: 0 auto 0 auto;
+    margin: 0 auto;
+    padding: 40px;
 }
 
-/* --Logos-- */
-.logo-git {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    object-fit: contain;
+
+@media (max-width: 768px) {
+    .articles article {
+        width: 45%;
+    }
 }
-.logo-cadastro, .logo-container, .logo-list, .logo-tabela, 
-.logo-formulario, .logo-label, .logo-midia, .logo-tel, .email-marketing {
-    width: 64px;
-    height: 64px;
-    border-radius: 50%;
-    object-fit: cover;
+
+@media (max-width: 480px) {
+    .articles article {
+        width: 100%;
+    }
 }

@@ -1,7 +1,11 @@
 * {
     box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 a {
@@ -9,8 +13,9 @@ a {
     text-decoration: none;
 }
 
-button {
-    background-color: #4CAF50;
+
+.button {
+    background-color: #322aa6;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -20,29 +25,78 @@ button {
     transition: background-color 0.3s ease;
     display: inline-block;
     margin: 20px;
+    text-decoration: none; 
 }
 
-button:hover {
+.button:hover {
     background-color: #45a049;
 }
 
-button:focus {
+.button:focus {
     outline: none;
     box-shadow: 0 0 5px 2px rgba(0, 128, 0, 0.6);
 }
 
-button a {
-    color: white;
-    text-decoration: none;
-}
 
-button:disabled {
-    background-color: #ddd;
-    cursor: not-allowed;
-}
-
-.container {
-    width: 80%;
-    margin: 0 auto;
+header {
+    background-image: url(/midia/azul-e-branco-tecnologia-abstrata-fundo-com-hexagonos-vetor.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 20px;
+}
+
+header .logo-container {
+    display: flex;
+    position: absolute;
+    right: 20px;
+}
+
+header li {
+    display: inline;
+}
+
+header img {
+    max-width: 230px;
+    height: auto;
+    
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    text-align: left;
+    font-family: arial, sans-serif;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+thead tr {
+    background-color: #c5c3e9;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.highlight{
+    background-color: #c5c3e9;
+}
+
+.aprovado {
+    background-color: rgb(144, 255, 136);
+}
+
+.reprovado {
+    background-color: rgb(255, 109, 109);
+}
+
+.recuperacao{
+    background-color: rgb(255, 233, 136);
 }
