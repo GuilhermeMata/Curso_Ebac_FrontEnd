@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+
+a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+
+.button {
+    background-color: #322aa6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    margin: 20px;
+    text-decoration: none; 
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+.button:focus {
+    outline: none;
+    box-shadow: 0 0 5px 2px rgba(0, 128, 0, 0.6);
+}
+
+
+header {
+    background-image: url(/midia/azul-e-branco-tecnologia-abstrata-fundo-com-hexagonos-vetor.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+header .logo-container {
+    display: flex;
+    position: absolute;
+    right: 20px;
+}
+
+header li {
+    display: inline;
+}
+
+header img {
+    max-width: 230px;
+    height: auto;
+}
+
+canvas {
+    background-color: #111;
+}
+
+.score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.8rem;
+    color: black;
+}
+
+.score--value {
+    font-weight: 700;
+    font-size: 4.5rem;
+    display: block;
+    margin-top: -10px;
+}
+
+.menu-screen {
+    position: absolute;
+    display: none;
+    flex-direction:  column;
+    align-items: center;
+    z-index: 1;
+}
+
+.game-over {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.final-score {
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.btn-play {
+    border: none;
+    border-radius: 100px;
+    padding: 10px 15px 10px 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+}
