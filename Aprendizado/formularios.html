@@ -3,18 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/form.css">
+    <link rel="stylesheet" href="/Aprendizado/css/form.css">
     <title>Formulários</title>
 </head>
 <body>
-    <nav>
-        <div>
-            <button>
-                <a href="index.html">Home</a>
-            </button>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/index.html" class="button">Home</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="logo-container">
+            <img src="/midia/ebac-removebg-preview.png" alt="ebac" width="140px">
         </div>
-    </nav>
-    <h1 style="text-align: center;">Formulario</h1>
+    </header>
+
+    <h1 style="text-align: center; margin-top: 50px;">Formulario</h1>
     <div class="container">
         <main>
             <form>
@@ -58,10 +64,16 @@
 
                 <label for="opniao">Deixe sua sujestão de Filme:</label>
                 <textarea name="opniao" id="opniao"></textarea>
+
+                <div class="button-container">
+                    <button type="submit" class="button">Enviar</button>
+                    <button type="reset" class="button">Limpar</button>
+                </div>
             </form>
-            <button type="submit">Enviar</button>
-            <button type="reset" class="btn-limpar">Limpar</button>
-        </main>
-    </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2024 - Todos os direitos reservados</p>
+        </footer>
 </body>
 </html>
