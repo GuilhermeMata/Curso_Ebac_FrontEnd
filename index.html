@@ -1,63 +1,128 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aula Html</title>
-    <link rel="stylesheet" href="/css/index.css">
-</head>
-<body>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/Aprendizado/css/index.css">
+
+  </head>
+  <body>
     <header>
-        <section>
-            <h1>Seja Bem Vindo!</h1>
-            <p>Este é o conteúdo principal da página. 🫡</p>
-        </section>  
-        <div class="container">
-            <nav>
-                <ul>
-                    <li>
-                        <button><a href="https://github.com/GuilhermeMata" title="Ir para o meu GitHub" class="GitHub">Meu GitHub</a></button>
-                        <img src="/midia/GitHub-Logo.png" alt="logo-github" class="logo-git">
-                    </li>
-                    <li>
-                        <button><a href="cadastro.html" title="cad">Exercício Cadastro</a></button>
-                        <img src="/midia/cadastro.avif" alt="logo-cad" class="logo-cadastro">
-                    </li>
-                    <li>
-                        <button><a href="containers.html" title="Containers">Acessar Containers</a></button>
-                        <img src="/midia/container-logo.jpg" alt="logo-cont" class="logo-container">
-                    </li>
-                    <li>
-                        <button><a href="listas.html" title="Listas">Acessar minhas Listas</a></button>
-                        <img src="/midia/lista.webp" alt="lista" class="logo-list">
-                    </li>
-                    <li>
-                        <button><a href="tabelas.html" title="Tabelas">Acessar minhas tabelas</a></button>
-                        <img src="/midia/tabelas.avif" alt="tabela" class="logo-tabela">
-                    </li>
-                    <li>
-                        <button><a href="formularios.html" title="formularios">Acessar meus Formulários</a></button>
-                        <img src="/midia/form.png" alt="Formulario" class="logo-formulario">
-                    </li>
-                    <li>
-                        <button><a href="label.html" title="labels">Label</a></button>
-                        <img src="/midia/label.avif" alt="label" class="logo-label">
-                    </li>
-                    <li>
-                        <button><a href="midia.html" title="midias">Midias</a></button>
-                        <img src="/midia/midia.jpg" alt="midia" class="logo-midia">
-                    </li>
-                    <li>
-                        <button><a href="tel:11 932002233" title="telefone">11 932002233</a></button>
-                        <img src="/midia/tel.png" alt="tel" class="logo-tel">
-                    </li>
-                    <li>
-                        <button><a href="mailto:guilherme@gmail.com" title="email">Entre em contato pelo E-mail</a></button>
-                        <img src="/midia/email-marketing.jpg" alt="mail" class="email-marketing">
-                    </li>
+      <!-- Bootstrap -->
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <img src="/midia/codesymbol.png" alt="Logo" width="90" height="50" class="d-inline-block align-text-top">
+          <a class="navbar-brand">Seja Bem-Vindo</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="https://github.com/GuilhermeMata">Meu GitHub</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Contato
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="https://www.linkedin.com/in/guilherme-mata-116523270/">Linkedin</a></li>
+                    <li><a class="dropdown-item" href="mailto:guilhermemata33@gmail.com">Enviar e-mail para Guilherme</a></li>
+                  </ul>
+                </li>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Exercícios EBAC
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/Aprendizado/containers.html">Exercício Artigo WEC</a></li>
+                  <li><a class="dropdown-item" href="/Aprendizado/exerciciocss.html">Exercício CSS</a></li>
+                  <li><a class="dropdown-item" href="/Aprendizado/cadastro.html">Exercício Cadastro</a></li>
+                  <li><a class="dropdown-item" href="/Aprendizado/formularios.html">Exercício Formulários</a></li>
+                  <li><a class="dropdown-item" href="/Aprendizado/listas.html">Exercício Lista</a></li>
+                  <li><a class="dropdown-item" href="/Games/Snake/indexSnake.html">Exercício Snake Game</a></li>
+                  <li><a class="dropdown-item" href="/Aprendizado/tabelas.html">Exercício Tabelas</a></li>                  
                 </ul>
-            </nav>
+              </li>
+            </ul>
+          </div>
         </div>
+      </nav>
     </header>
-</body>
+
+    <div class="container mt-5">
+      <div class="row">
+
+        <article class="col-12 col-md-6 mb-4">
+          <h3>Loja de Games</h3>
+          <p>- Projeto Realizado em conjunto com os Cursos EBAC</p>
+          <a href="/Aprendizado/lojadegames.html">
+            <img src="/midia/lojagames.jpg" alt="loja-games" class="img-fluid" style="height: 300px; border-radius: 10px; object-fit: cover;">
+          </a>
+        </article>
+
+        <article class="col-12 col-md-6 mb-4">
+          <h3>Exercício de CSS</h3>
+          <p>- Projeto Realizado em conjunto com os Cursos EBAC</p>
+          <a href="/Aprendizado/exerciciocss.html">
+            <img src="/midia/print-css.png" alt="exercico-css" class="img-fluid" style="height: 300px; border-radius: 10px; object-fit: cover;">
+          </a>
+        </article> 
+
+        <article class="col-12 col-md-6 mb-4">
+          <h3>Projeto Pessoal SnakeGame</h3>
+          <p>- Jogo desenvolvido utilizando JavaScript</p>
+            <a href="/Games/Snake/indexSnake.html">
+              <img src="/midia/print-snakegame.png" alt="SnakeGame" class="img-fluid" style="height: 300px; object-fit: cover;">
+            </a>
+        </article>
+
+        <article class="col-12 col-md-6 mb-4">
+          <h3>Artigo WEC</h3>
+          <p>- Projeto inspirado no campeonato da WEC</p>
+          <a href="/Aprendizado/containers.html">
+            <img src="/midia/print-container.png" alt="carros-wec" class="img-fluid" style="height: 300px; border-radius: 10px; object-fit: cover;">
+          </a>
+        </article>
+      
+        <article class="col-12 col-md-6 mb-4">
+            <h3>Exercício de Tabela</h3>
+            <p>- Projeto Realizado Na EBAC</p>
+            <a href="/Aprendizado/tabelas.html">
+              <img src="/midia/print-tabela.png" alt="tabela" class="img-fluid" style="height: 300px; object-fit: cover;">
+            </a>
+          </article>
+
+        <article class="col-12 col-md-6 mb-4">
+          <h3>Exercício de Fomulário</h3>
+          <p>- Projeto Realizado Na EBAC</p>
+          <a href="/Aprendizado/formularios.html">
+            <img src="/midia/print-form.png" alt="formulario" class="img-fluid" style="height: 300px; object-fit: cover;">
+          </a>
+        </article>
+
+        <article class="col-12 col-md-6 mb-4">
+          <h3>Exercício de listas</h3>
+          <p>- Projeto Realizado Na EBAC</p>
+          <a href="/Aprendizado/listas.html">
+            <img src="/midia/print-list.png" alt="listas" class="img-fluid" style="height: 300px; object-fit: cover;">
+          </a>
+        </article>
+
+        <article class="col-12 col-md-6 mb-4">
+          <h3>Exercício de Cadastro</h3>
+          <p>- Projeto Realizado Na EBAC</p>
+          <a href="/Aprendizado/cadastro.html">
+            <img src="/midia/print-cad.png" alt="listas" class="img-fluid" style="height: 300px; object-fit: cover;">
+          </a>
+        </article>
+
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>

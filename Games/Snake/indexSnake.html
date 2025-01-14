@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./snake.css">
+    <title>Snake Game</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/index.html" class="button">Home</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="logo-container">
+            <img src="/midia/ebac-removebg-preview.png" alt="ebac" width="140px">
+        </div>
+    </header>
+
+    
+    <div class="score">
+        score <span class="score--value">00</span>
+    </div>
+
+    <div class="menu-screen">
+        <span class="game-over">Game Over</span>
+        <span class="final-score">
+            score <span>00</span>
+        </span>
+
+        <button class="btn-play">
+            <span class="material-symbols-outlined">
+                play_circle
+            </span>
+            Reiniciar o Jogo
+        </button>
+    </div>
+
+    <canvas width="600" height="600"></canvas>
+    <script src="./snake.js"></script>
+</body>
+</html>

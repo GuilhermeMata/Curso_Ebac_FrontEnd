@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Aprendizado/css/form.css">
+    <title>Formulários</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/index.html" class="button">Home</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="logo-container">
+            <img src="/midia/ebac-removebg-preview.png" alt="ebac" width="140px">
+        </div>
+    </header>
+
+    <h1 style="text-align: center; margin-top: 50px;">Formulario</h1>
+    <div class="container">
+        <main>
+            <form>
+                <label for="nome">Nome:</label>
+                <input id="nome" type="text" placeholder="Seu Nome">
+
+                <label for="email">Email:</label>
+                <input id="email" type="email" placeholder="Email">
+
+                <label for="tel">Telefone:</label>
+                <input id="tel" type="tel" placeholder="Telefone">
+
+                <label for="number">Seu Id:</label>
+                <input id="number" type="number" max="10" min="2" step="2">
+
+                <label for="arquivo">Anexe teu arquivo aqui:</label>
+                <input id="arquivo" type="file">
+
+                <label for="color">Escolha uma Cor:</label>
+                <input id="color" type="color">
+
+                <input type="checkbox" id="checkbox-termos"> 
+                <label for="checkbox-termos">Aceito os termos</label>
+
+                <p>Qual sua cor favorita?</p>
+                <input type="radio" name="cor-favorita" id="cor-vermelha">
+                <label for="cor-vermelha">Vermelho</label>
+
+                <input type="radio" name="cor-favorita" id="cor-verde">
+                <label for="cor-verde">Verde</label> 
+
+                <input type="radio" name="cor-favorita" id="cor-azul">
+                <label for="cor-azul">Azul</label>
+
+                <label for="filme-favorito">Qual seu Filme Favorito?</label>
+                <select name="filme" id="filme-favorito">
+                    <option value="A">Filme A</option>
+                    <option value="B">Filme B</option>
+                    <option value="C">Filme C</option>
+                </select>
+
+                <label for="opniao">Deixe sua sujestão de Filme:</label>
+                <textarea name="opniao" id="opniao"></textarea>
+
+                <div class="button-container">
+                    <button type="submit" class="button">Enviar</button>
+                    <button type="reset" class="button">Limpar</button>
+                </div>
+            </form>
+        </div>
+
+        <footer>
+            <p>&copy; 2024 - Todos os direitos reservados</p>
+        </footer>
+</body>
+</html>
