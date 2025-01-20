@@ -142,3 +142,8 @@ footer {
     color: #ecf0f1;
     padding: 16px 0;
 } 
+
+h1 a {
+    text-decoration: none; 
+    color: inherit; 
+}
