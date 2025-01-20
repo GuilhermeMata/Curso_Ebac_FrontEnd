@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+header {
+    background-image: url(/midia/thumbnail-imsa.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+header .logo-container {
+    display: flex;
+    position: absolute;
+    right: 20px;
+}
+
+header img {
+    max-width: 230px;
+    height: auto;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav li {
+    display: inline;
+}
+
+footer {
+    background-color: red;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    position: relative;
+}
+
+footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+footer p {
+    z-index: 2;
+    position: relative;
+}
+
+.container {
+    max-width: 1288px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.articles article {
+    flex: 1 1 30%;
+    max-width: 32%;
+    margin-bottom: 20px;
+}
+
+.articles article img {
+    width: 100%;
+    height: auto;
+}
+
+.articles article p,
+.articles article a {
+    font-family: 'Roboto', sans-serif;
+}
+
+.articles article h3 {
+    font-size: 24px;
+}
+
+.articles article h2 {
+    font-size: 28px;
+    margin-top: 10px;
+}
+
+
+header .container,
+section .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section .container {
+    align-items: flex-start;
+}
+
+section {
+    padding: 24px 0;
+}
+
+section h2 {
+    margin-bottom: 16px;
+}
+
+section p {
+    margin-bottom: 10px;
+}
+
+.store-front {
+    margin-right: 32px;
+}
