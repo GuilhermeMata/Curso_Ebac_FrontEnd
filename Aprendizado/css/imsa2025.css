@@ -1,11 +1,16 @@
+/* Importação de fontes */
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+
+/* Reset básico */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+/* Estilo global */
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Michroma", serif;
 }
 
 a {
@@ -13,6 +18,19 @@ a {
     text-decoration: none;
 }
 
+header,
+section h2,
+section h3,
+form button {
+    font-family: "Michroma", serif;
+    font-weight: normal;
+}
+
+body, input, textarea {
+    font-family: "Michroma", serif;
+}
+
+/* Estilo do header */
 header {
     background-image: url(/midia/thumbnail-imsa.jpeg);
     background-size: cover;
@@ -45,8 +63,153 @@ header nav li {
     display: inline;
 }
 
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Container geral */
+.container {
+    max-width: 1288px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+/* Estilo das sections */
+section {
+    padding: 24px 0;
+}
+
+section h2 {
+    margin-bottom: 16px;
+}
+
+section p {
+    margin-bottom: 10px;
+}
+
+section .container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+/* Estilo dos artigos */
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.articles article {
+    flex: 1 1 30%;
+    max-width: 32%;
+    margin-bottom: 20px;
+}
+
+.articles article img {
+    width: 100%;
+    height: auto;
+}
+
+.articles article h2 {
+    font-size: 28px;
+    margin-top: 10px;
+}
+
+.articles article h3 {
+    font-size: 24px;
+}
+
+.articles article p,
+.articles article a {
+    font-family: "Michroma", serif;
+}
+
+/* Formulários */
+form input,
+form textarea,
+form button {
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+form button {
+    background-color: #45a049;
+    color: #ecf0f1;
+    border: none;
+    cursor: pointer;
+    margin: 0px;
+}
+
+form button:hover {
+    background-color: rgb(175, 39, 39);
+}
+
+form textarea {
+    resize: none;
+    height: 180px;
+}
+
+/* Botões gerais */
+button {
+    background-color: #45a049;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    margin: 20px;
+}
+
+button:hover {
+    background-color: rgb(175, 39, 39);
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 5px 2px rgba(0, 128, 0, 0.6);
+}
+
+/* Links e mídias sociais */
+.store-front {
+    margin-right: 32px;
+}
+
+.social-links img {
+    height: 24px;
+}
+
+.social-links li {
+    display: inline;
+    margin-right: 8px;
+}
+
+.social-links li a {
+    text-decoration: none;
+}
+
+/* Contato */
+#contact .container {
+    display: block;
+}
+
+.contact-methods {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Estilo do footer */
 footer {
-    background-color: red;
+    background-color: rgb(76, 0, 255);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -72,71 +235,4 @@ footer::before {
 footer p {
     z-index: 2;
     position: relative;
-}
-
-.container {
-    max-width: 1288px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 10px;
-}
-
-.articles {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 10px;
-}
-
-.articles article {
-    flex: 1 1 30%;
-    max-width: 32%;
-    margin-bottom: 20px;
-}
-
-.articles article img {
-    width: 100%;
-    height: auto;
-}
-
-.articles article p,
-.articles article a {
-    font-family: 'Roboto', sans-serif;
-}
-
-.articles article h3 {
-    font-size: 24px;
-}
-
-.articles article h2 {
-    font-size: 28px;
-    margin-top: 10px;
-}
-
-
-header .container,
-section .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-section .container {
-    align-items: flex-start;
-}
-
-section {
-    padding: 24px 0;
-}
-
-section h2 {
-    margin-bottom: 16px;
-}
-
-section p {
-    margin-bottom: 10px;
-}
-
-.store-front {
-    margin-right: 32px;
 }
